@@ -72,7 +72,7 @@
 
 注意：repository name 必须为 你的ID.github.io">
 <meta property="og:image" content="http://aslasp.github.io/images/github-hexo-blog/1.png">
-<meta property="og:updated_time" content="2016-03-14T07:40:20.652Z">
+<meta property="og:updated_time" content="2016-03-14T09:36:58.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo博客搭建记">
 <meta name="twitter:description" content="利用github pages + hexo 搭建个人博客是一件非常简单的事情。下面记录一下主要流程
@@ -292,6 +292,7 @@
 cd directory
 hexo init
 npm install hexo-server --save
+npm install hexo-deployer-git --save
 </code></pre><h2 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a>编辑配置文件</h2><p>打开_config.yml文件，设置好相关信息（博客名、author等），关键是下面这一段</p>
 <blockquote>
 <p>deploy:<br>    type: git<br>    repo: <em>你刚才建的repository的地址，推荐用SSH</em><br>    branch: master</p>
