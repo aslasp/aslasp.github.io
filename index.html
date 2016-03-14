@@ -265,42 +265,16 @@
 
       
         
-          
-            <p>利用github pages + hexo 搭建个人博客是一件非常简单的事情。下面记录一下主要流程</p>
+          <p>利用github pages + hexo 搭建个人博客是一件非常简单的事情。下面记录一下主要流程</p>
 <h1 id="在github上新建一个repository"><a href="#在github上新建一个repository" class="headerlink" title="在github上新建一个repository"></a>在github上新建一个repository</h1><hr>
 <p>假设你已经拥有github账号，那么首先来新建一个repo吧。</p>
 <p><img src="/images/github-hexo-blog/1.png" alt="github截图" title="在github中新建repository"></p>
-<p><strong>注意：repository name 必须为 你的ID.github.io</strong></p>
-<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><hr>
-<p>Hexo是一个简单、快速、强大的Node.js静态博客框架。你当然可以选择不使用它，直接编写html+css+js代码来写博客，只是那样有点太累了=。=</p>
-<p>安装Hexo分以下几个步骤：</p>
-<h2 id="安装node-js和npm"><a href="#安装node-js和npm" class="headerlink" title="安装node.js和npm"></a>安装node.js和npm</h2><p>这个不用讲了吧，去<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js官网</a>下一个装上就行。</p>
-<p>现在的node.js都自带npm。你可以在命令行输入<code>node -v</code>和<code>npm -v</code>看看是否安装成功。</p>
-<h2 id="（可选）为npm设置淘宝NPM镜像"><a href="#（可选）为npm设置淘宝NPM镜像" class="headerlink" title="（可选）为npm设置淘宝NPM镜像"></a>（可选）为npm设置淘宝NPM镜像</h2><p>因为众所周知的原因，国内访问npm可能不太稳定，所以用<a href="http://npm.taobao.org/" target="_blank" rel="external">淘宝镜像</a>比较好。</p>
-<p>使用方法见链接。</p>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><pre><code>npm install -g hexo-cli
-</code></pre><h1 id="使用hexo搭建博客"><a href="#使用hexo搭建博客" class="headerlink" title="使用hexo搭建博客"></a>使用hexo搭建博客</h1><hr>
-<h2 id="初始化工程"><a href="#初始化工程" class="headerlink" title="初始化工程"></a>初始化工程</h2><pre><code>mkdir directory
-cd directory
-hexo init
-npm install hexo-server --save
-</code></pre><h2 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a>编辑配置文件</h2><p>打开_config.yml文件，设置好相关信息（博客名、author等），关键是下面这一段</p>
-<blockquote>
-<p>deploy:<br>    type: git<br>    repo: <em>你刚才建的repository的地址，推荐用SSH</em><br>    branch: master</p>
-</blockquote>
-<p>配置完成后，博客就算搭好了。</p>
-<h2 id="正常使用"><a href="#正常使用" class="headerlink" title="正常使用"></a>正常使用</h2><p>正常使用时一般有以下几个步骤：写博客，生成博客，线下测试，部署到github。</p>
-<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><pre><code>hexo new &quot;title&quot;
-</code></pre><p>这样就创建了一个新的md文件，使用markdown语法编写你的博客。</p>
-<h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><p>推荐这样：</p>
-<pre><code>hexo clean
-hexo g
-</code></pre><h3 id="线下测试"><a href="#线下测试" class="headerlink" title="线下测试"></a>线下测试</h3><pre><code>hexo s
-</code></pre><p>然后就可以去指定端口预览你的博客了。</p>
-<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><pre><code>hexo deploy
-</code></pre><p>完成！</p>
-
-          
+<p><strong>注意：repository name 必须为 你的ID.github.io</strong><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/14/github-hexo博客搭建记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
